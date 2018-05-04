@@ -42,40 +42,26 @@ public class ControllerClass {
 						break;
 					}
 					if(c[0].equals(origin)) {
-						
 						origin1.add(c[1]);
-					
-				
-				}
-                if(c[1].equals(origin)) {
-						
+					}
+                    if(c[1].equals(origin)) {
 						origin1.add(c[0]);
-					
-				
-				}	
-                if(c[0].equals(destination)) {
-					
+					}	
+                    if(c[0].equals(destination)) {
 					destination1.add(c[1]);
-				
-			
-			}
-            if(c[1].equals(destination)) {
-					
+					}
+                    if(c[1].equals(destination)) {
 					destination1.add(c[0]);
-				
-			
-			}
-            for(String d:origin1) {
-            	for(String f:destination1) {
-            		if(d.equals(f)) {
-            			ft=true;
-            		}
-            	}
-            }
-				}
+					}
+                  }
+				 for(String d:origin1) {
+	            	 for(String f:destination1) {
+	            		if(d.equals(f)) {
+	            			ft=true;
+	            		}
+	            	}
+	            }
 				br.close();
-				
-				
 				
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
